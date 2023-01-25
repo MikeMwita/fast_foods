@@ -3,6 +3,9 @@ package controllers
 import (
 	"context"
 	"fmt"
+	"github.com/MikeMwita/fast_foods/models"
+	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/bson"
 	"net/http"
 	"time"
 )
@@ -33,14 +36,27 @@ func CreateFood() gin.HandlerFunc {
 	}
 }
 
-func GetFoods() {
+func GetFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
+func GetFoods() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
+func UpdateFood() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+func round(num float64) int {
 
 }
 
-func GetFood() {
-
-}
-
-func UpdateFood() {
+func toFixed(num float64, precision int) float64 {
 
 }

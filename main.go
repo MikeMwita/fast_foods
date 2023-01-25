@@ -1,6 +1,13 @@
 package main
 
-import "os"
+import (
+	"github.com/MikeMwita/fast_foods/database"
+	"github.com/MikeMwita/fast_foods/middleware"
+	"github.com/MikeMwita/fast_foods/routes"
+	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/mongo"
+	"os"
+)
 
 func main() {
 	port := os.Getenv("PORT")
@@ -25,5 +32,3 @@ func main() {
 
 	router.Run(":" + port)
 }
-
-//install go gin,mongodb+ getenv

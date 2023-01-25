@@ -2,25 +2,25 @@ package controllers
 
 import "github.com/gin-gonic/gin"
 
-func GetInvoices() gin.HandlerFunc {
+func GetOrders() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 	}
 }
 
-func Getinvoice() gin.HandlerFunc {
+func GetOrder() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 	}
 }
 
-func CreateInvoice() gin.HandlerFunc {
+func Createorder() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 	}
 }
 
-func UpdateInvoice() gin.HandlerFunc {
+func UpdateOrder() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 	}

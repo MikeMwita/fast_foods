@@ -1,6 +1,12 @@
 package routes
 
-func orderRoutes(incomingRoutes *gin.Engine) {
+import (
+	controller "github.com/MikeMwita/fast_foods/controllers"
+
+	"github.com/gin-gonic/gin"
+)
+
+func OrderRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.GET("/orders", controller.GetOrders())
 	incomingRoutes.GET("/orders/:order", controller.GetOrder())
 	incomingRoutes.POST("/orders", controller.Createorder())
